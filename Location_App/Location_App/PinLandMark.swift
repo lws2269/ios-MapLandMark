@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-enum PinLandMark: Int {
+enum PinLandMark: Int, CaseIterable {
     case Deoksugung = 100
     case GyeongbokGung = 200
     case SeoulCityHall = 300

@@ -8,12 +8,11 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "LandMark"
+//        UISearchController는 코드로만 넣을 수 있음
     }
-
-
 }
 

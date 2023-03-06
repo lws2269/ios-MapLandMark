@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     private func makeSearchController() {
         searchController = UISearchController(searchResultsController: resultsController)
         searchController.searchResultsUpdater = self
+        searchController.searchBar.autocapitalizationType = .none
         navigationItem.searchController = searchController
     }
     
@@ -63,9 +64,12 @@ extension MainViewController: MKMapViewDelegate {
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         detailVC.url = selectedPin?.url
+        self.navigationItem.title = selectedPin?.title
         
         self.navigationController?.pushViewController(detailVC, animated: true)
         
+        // 선택한 핀 선택해제
+        self.mapView.deselectAnnotation(view.annotation, animated: true)
         
     }
 }
@@ -81,7 +85,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(filteredLandMarks[indexPath.row].id)
+        guard let selectedPin = PinLandMark(rawValue: filteredLandMarks[indexPath.row].id) else {
+            return
+        }
+
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let regian = MKCoordinateRegion(center: selectedPin.coordinate, span: span)
+        
+        self.mapView.setRegion(regian, animated: true)
+        
+        // searchController를 비활성화 시키는 여러가지 방법
+//        searchController.searchBar.text = ""
+      searchController.isActive = false
+        self.navigationItem.title = selectedPin.title
     }
     
 }

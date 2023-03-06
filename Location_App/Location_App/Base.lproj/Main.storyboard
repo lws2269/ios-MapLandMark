@@ -74,24 +74,24 @@
             </objects>
             <point key="canvasLocation" x="1836" y="4"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Search Results Table View Controller-->
         <scene sceneID="5W6-Er-SJu">
             <objects>
-                <tableViewController id="cxs-LM-BCL" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchResultsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cxs-LM-BCL" customClass="SearchResultsTableViewController" customModule="Location_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="U4h-1c-nT8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TXt-PC-pUd">
-                                <rect key="frame" x="0.0" y="50" width="393" height="61.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ResultsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsCell" id="TXt-PC-pUd" customClass="ResultsCell" customModule="Location_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TXt-PC-pUd" id="dHI-Nj-b3p">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="61.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjF-Zf-6rN">
-                                            <rect key="frame" x="20" y="20" width="42" height="21.666666666666671"/>
+                                            <rect key="frame" x="20" y="20" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -103,6 +103,9 @@
                                         <constraint firstItem="tjF-Zf-6rN" firstAttribute="leading" secondItem="dHI-Nj-b3p" secondAttribute="leading" constant="20" id="apB-8v-10Q"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="tjF-Zf-6rN" id="UQF-rb-e2d"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -113,7 +116,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2m-61-Erc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="27"/>
+            <point key="canvasLocation" x="2604" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Lg-LF-moZ">

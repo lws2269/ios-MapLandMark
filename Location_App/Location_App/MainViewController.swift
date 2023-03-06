@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     var searchController: UISearchController!
     var resultsController: SearchResultsTableViewController!
     var filteredLandMarks = [PinLandMark]()
-    
+    let locationManager = LocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,13 @@ class MainViewController: UIViewController {
         addPin()
         makeResultsController()
         makeSearchController()
+        
+        locationManager.getMyLocation { location in
+            // 위치로 이동
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            self.mapView.setRegion(region, animated: true)
+        }
     }
     
     private func makeSearchController() {

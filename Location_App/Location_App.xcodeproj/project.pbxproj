@@ -10,6 +10,7 @@
 		5421E27529B58C2200C28A82 /* PinLandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421E27429B58C2200C28A82 /* PinLandMark.swift */; };
 		5421E27729B59E8400C28A82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421E27629B59E8400C28A82 /* DetailViewController.swift */; };
 		5421E27929B5A34200C28A82 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421E27829B5A34200C28A82 /* SearchResultsTableViewController.swift */; };
+		547F4FD629B5BE7F00C2A908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FD529B5BE7F00C2A908 /* LocationManager.swift */; };
 		54F9C0BA29A317C000C24F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F9C0B929A317C000C24F90 /* AppDelegate.swift */; };
 		54F9C0BC29A317C000C24F90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F9C0BB29A317C000C24F90 /* SceneDelegate.swift */; };
 		54F9C0BE29A317C000C24F90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F9C0BD29A317C000C24F90 /* MainViewController.swift */; };
@@ -42,6 +43,8 @@
 		5421E27429B58C2200C28A82 /* PinLandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLandMark.swift; sourceTree = "<group>"; };
 		5421E27629B59E8400C28A82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5421E27829B5A34200C28A82 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		547F4FD529B5BE7F00C2A908 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		547F4FD729B5D5E300C2A908 /* Korea.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Korea.gpx; sourceTree = "<group>"; };
 		54F9C0B629A317C000C24F90 /* Location_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Location_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F9C0B929A317C000C24F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54F9C0BB29A317C000C24F90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				5421E27429B58C2200C28A82 /* PinLandMark.swift */,
 				5421E27629B59E8400C28A82 /* DetailViewController.swift */,
 				5421E27829B5A34200C28A82 /* SearchResultsTableViewController.swift */,
+				547F4FD529B5BE7F00C2A908 /* LocationManager.swift */,
+				547F4FD729B5D5E300C2A908 /* Korea.gpx */,
 			);
 			path = Location_App;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				54F9C0BE29A317C000C24F90 /* MainViewController.swift in Sources */,
 				5421E27529B58C2200C28A82 /* PinLandMark.swift in Sources */,
 				5421E27929B5A34200C28A82 /* SearchResultsTableViewController.swift in Sources */,
+				547F4FD629B5BE7F00C2A908 /* LocationManager.swift in Sources */,
 				5421E27729B59E8400C28A82 /* DetailViewController.swift in Sources */,
 				54F9C0BA29A317C000C24F90 /* AppDelegate.swift in Sources */,
 				54F9C0BC29A317C000C24F90 /* SceneDelegate.swift in Sources */,
